@@ -1,0 +1,9 @@
+Category,Amount,Date,Type
+Sales,50000,2026-01-01,Revenue
+Services,20000,2026-01-05,Revenue
+Rent,5000,2026-01-10,Expense
+Marketing,8000,2026-01-12,Expense
+Salaries,15000,2026-01-15,Expense
+Utilities,1200,2026-01-20,Expense
+Inventory,10000,2026-01-25,Expense
+Tax,3000,2026-01-28,Expense

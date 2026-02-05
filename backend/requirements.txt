@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pandas
+sqlalchemy
+psycopg2-binary
+python-dotenv
+openai
+cryptography
+python-multipart
+pydantic
+pydantic-settings
+matplotlib
+jinja2
+python-jose[cryptography]
+passlib[bcrypt]
