@@ -68,6 +68,17 @@ function App() {
         <p style={{ color: 'var(--text-muted)', fontSize: '1.25rem', maxWidth: '600px', margin: '0 auto' }}>
           Transforming your financial statements into strategic growth insights with enterprise-grade AI.
         </p>
+        <div style={{ marginTop: '1.5rem' }}>
+          <a
+            href="https://github.com/Dhagoo/Financial-Health-Assistant"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+            style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '0.6rem 1.2rem', fontSize: '0.9rem', opacity: 0.9 }}
+          >
+            <span>🔗</span> View on GitHub
+          </a>
+        </div>
       </header>
 
       <main className="grid">
