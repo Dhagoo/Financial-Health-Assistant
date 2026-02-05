@@ -30,8 +30,10 @@ function App() {
     formData.append('industry', industry);
     formData.append('lang', lang);
 
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
     try {
-      const response = await fetch('http://localhost:8000/upload', {
+      const response = await fetch(`${apiUrl}/upload`, {
         method: 'POST',
         body: formData,
       });
@@ -211,7 +213,7 @@ function App() {
         {!data && (
           <>
             <div style={{ textAlign: 'center', padding: '1rem', background: 'rgba(255, 255, 255, 0.03)', borderRadius: '12px', margin: '1rem auto', maxWidth: '400px' }}>
-              <a href="http://localhost:8000/sample-csv" style={{ color: 'var(--primary)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500' }}>
+              <a href={`${apiUrl}/sample-csv`} style={{ color: 'var(--primary)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500' }}>
                 📥 Download Industry Sample CSV
               </a>
             </div>

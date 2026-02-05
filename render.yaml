@@ -1,0 +1,23 @@
+services:
+  # Backend: Deployment for FastAPI
+  - type: web
+    name: financial-health-api
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && gunicorn main:app -w 4 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PORT
+        value: 10000
+
+  # Frontend: Deployment for React (Static)
+  - type: static
+    name: financial-health-dashboard
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    publishPath: frontend/dist
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          name: financial-health-api
+          type: web
+          property: host
