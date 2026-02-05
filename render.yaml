@@ -10,7 +10,7 @@ services:
         value: 10000
 
   # Frontend: Deployment for React (Static)
-  - type: static
+  - type: static_site
     name: financial-health-dashboard
     env: static
     buildCommand: cd frontend && npm install && npm run build
