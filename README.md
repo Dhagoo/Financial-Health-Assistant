@@ -32,3 +32,15 @@ An AI-powered platform for small and medium enterprises to evaluate their financ
 1. Click **"Download Sample Financial CSV"** on the dashboard.
 2. Select your **Industry** and **Language**.
 3. Upload the CSV to see the magic!
+
+
+
+
+
+
+
+
+
+<a href="https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2FDhagoo%2FFinancial-Health-Assistant">
+  <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+</a>
