@@ -15,6 +15,8 @@ function App() {
     setError(null);
   };
 
+  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
   const handleAnalyze = async () => {
     if (!file) {
       setError("Please select a file first.");
@@ -29,8 +31,6 @@ function App() {
     formData.append('file', file);
     formData.append('industry', industry);
     formData.append('lang', lang);
-
-    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
     try {
       const response = await fetch(`${apiUrl}/upload`, {
